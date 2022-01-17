@@ -15,7 +15,20 @@ class _Settings_PageState extends State<Settings_Page> {
         title: Text('Settings'),
       ),
       body: Center(
-        child: Text('Settings Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Settings Page',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+            Text('with new FloatingActionButton.small()'),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton.small(
+        onPressed: () {},
+        child: Icon(Icons.plus_one),
       ),
     );
   }

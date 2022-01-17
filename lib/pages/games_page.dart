@@ -15,7 +15,20 @@ class _Games_PageState extends State<Games_Page> {
         title: Text('Games'),
       ),
       body: Center(
-        child: Text('Games Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Games Page',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+            Text('with new FloatingActionButton.large()'),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton.large(
+        onPressed: () {},
+        child: Icon(Icons.refresh),
       ),
     );
   }

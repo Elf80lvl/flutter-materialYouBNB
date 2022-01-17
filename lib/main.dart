@@ -83,7 +83,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      body: screens[index],
+      body: IndexedStack(
+        index: index,
+        children: screens,
+      ),
+      //screens[index],
     );
   }
 }
