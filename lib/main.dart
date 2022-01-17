@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_you_navigbar/pages/games_page.dart';
 import 'package:material_you_navigbar/pages/me_page.dart';
+import 'package:material_you_navigbar/pages/more_page.dart';
 import 'package:material_you_navigbar/pages/settings_page.dart';
 
 void main() {
@@ -40,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Me_Page(),
     Games_Page(),
     Settings_Page(),
+    More_Page(),
   ];
 
   @override
@@ -79,6 +81,11 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.settings_outlined),
               selectedIcon: Icon(Icons.settings),
               label: 'Settings',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.more_outlined),
+              selectedIcon: Icon(Icons.more),
+              label: 'More',
             ),
           ],
         ),
